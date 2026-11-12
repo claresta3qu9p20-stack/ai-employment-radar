@@ -11,6 +11,8 @@
   <img src="examples/screenshot-catalog.png" width="300" alt="总目录页">
 </p>
 
+左：单份摘要长页（`examples/screenshot-page.png`，完整版见 `examples/screenshot-page-full.png`）　右：总目录页
+
 ## 为什么需要它
 
 用 AI 总结研报，最常见的三个毛病：
