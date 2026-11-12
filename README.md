@@ -31,10 +31,10 @@
 
 ```bash
 # WorkBuddy / CodeBuddy
-git clone <repo-url> ~/.workbuddy/skills/ai-employment-radar
+git clone https://github.com/claresta3qu9p20-stack/ai-employment-radar.git ~/.workbuddy/skills/ai-employment-radar
 
 # Claude Code
-git clone <repo-url> ~/.claude/skills/ai-employment-radar
+git clone https://github.com/claresta3qu9p20-stack/ai-employment-radar.git ~/.claude/skills/ai-employment-radar
 ```
 
 也可以用项目级目录（`.workbuddy/skills/` 或 `.claude/skills/`），跟着仓库走。
