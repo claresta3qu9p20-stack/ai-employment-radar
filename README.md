@@ -11,7 +11,7 @@
   <img src="examples/screenshot-catalog.png" width="300" alt="总目录页">
 </p>
 
-左：单份摘要长页（`examples/screenshot-page.png`，完整版见 `examples/screenshot-page-full.png`）　右：总目录页
+<p align="center"><sub>左：单份摘要长页（`examples/screenshot-page-full.png` 是完整版）　右：总目录页</sub></p>
 
 ## 为什么需要它
 
