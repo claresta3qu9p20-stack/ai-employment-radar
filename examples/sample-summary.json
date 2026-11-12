@@ -1,0 +1,103 @@
+{
+  "title": "Artificial Intelligence Adoption in Chinese Enterprises: Productivity Effects, Workforce Implications, and Policy Challenges",
+  "title_zh": "中国企业的人工智能采纳：生产率效应、劳动力影响与政策挑战",
+  "meta": {
+    "author": "Ekkehard Ernst（ILO）、赵忠、朱惠琳、李宇慧、魏欣、张昊、陈泽阳（中国人民大学）",
+    "institution": "国际劳工组织（ILO）",
+    "date": "2026-09",
+    "pages": 12,
+    "url": "https://www.ilo.org/publications/artificial-intelligence-adoption-chinese-enterprises-productivity-effects",
+    "type": "实证研究",
+    "type_reason": "有原创一手数据：21 家企业结构化深访（人大研究者执行）加 1,591 名从业者问卷，属自采数据，非二手指数套算。"
+  },
+  "source_brief": "国际劳工组织是联合国负责劳动世界的专门机构，这份 12 页研究简报由该组织研究统计司与中国人民大学研究者合作完成，属机构研究序列而非同行评议论文。它的定位不是提出新理论，而是把中国企业的实际用法、实际收益和实际困难记下来，因此价值在于「一手材料」，而不是模型推演。样本覆盖制造、金融、建筑、教育、传媒、旅游等行业，从 8 人初创到 27 万人的集团都有。",
+  "points": [
+    {
+      "text": "受访的 21 家中国企业，没有一家是「还没开始」：要么已经在用 AI，要么有明确的近期上线计划。",
+      "page": 1,
+      "page_note": "首页要点",
+      "quote": "every company reported either active AI deployment or concrete plans for imminent adoption."
+    },
+    {
+      "text": "凡是能拿出数字的地方，提升幅度都不小：某保险公司 300 名客服的日处理量从 6000 件涨到 15000 件，某集团招聘周期从 30 天压到 13 天，某制造灯塔工厂生产效率提高 30%。",
+      "page": 5,
+      "page_note": "生产率一节，数据表见 p.6",
+      "quote": "the insurance company reported that 300 customer-service employees increased their daily throughput from 6,000 to 15,000 issues, a 150 per cent improvement."
+    },
+    {
+      "text": "但这些数字全是企业自己报的，绝大多数企业没有系统的评估办法，连「AI 到底带来多少效益」都说不清。",
+      "page": 6,
+      "page_note": "表 3 注释",
+      "quote": "All figures are self-reported by firm representatives."
+    },
+    {
+      "text": "中国企业目前的主流形态是人机协作，不是全自动：AI 输出质量不达标时仍然要人来兜底，某人力资源服务公司的 AI 客服准确率低于 95%，达不到直接对客的标准。",
+      "page": 9,
+      "page_note": "人机协作一节",
+      "quote": "the HR services firm's AI customer service accuracy of below 95 per cent means that human review remains essential before any AI output reaches clients."
+    },
+    {
+      "text": "冲击集中在重复性、数据密集的任务上，某制造企业原本十多人读客户规格文档的岗位，现在只剩 2 到 3 人。",
+      "page": 5,
+      "page_note": "生产率一节",
+      "quote": "a client's team of over 10 employees dedicated to reading customer specification documents was reduced to 2–3 employees"
+    },
+    {
+      "text": "从业者并不乐观也不悲观：56% 认为 AI 不可避免，47% 认为它创造的岗位多于替代的岗位，但 39% 预计自己的收入会下降。",
+      "page": 7,
+      "page_note": "从业者认知表",
+      "quote": "39 per cent of respondents anticipate that AI will lead to income declines"
+    },
+    {
+      "text": "企业引入 AI 的组织方式有三种：设专门团队集中做、嵌进业务部门做、以及员工自下而上自己用起来；多数企业还停在「用 AI 加速原有任务」这一层。",
+      "page": 4,
+      "page_note": "组织模型一节",
+      "quote": "In the specialised team model, a centralised AI team leads implementation and develops proprietary tools ... In the business-embedded model, AI capabilities are woven into existing business units ... In the spontaneous diffusion model, AI adoption spreads organically across teams without top-down coordination"
+    }
+  ],
+  "reasoning": {
+    "notice": "本段为整理后重排，非原文行文顺序；每步已标原文页码。",
+    "premise": {
+      "text": "报告先立一条前提：要判断 AI 对就业的影响，得看企业实际怎么用它，而不是看技术本身能做到什么。所以选的办法是进企业访谈，而不是跑模型。",
+      "page": 2,
+      "page_note": "引言与方法"
+    },
+    "mechanism": {
+      "text": "报告给出的链条是：企业为了效率、质量和成本引入 AI，先落在重复且数据密集的环节（筛简历、处理文档、回常规咨询）；这些环节被接管后，岗位内容被重组而不是整体消失，人转到判断、复核和异常处理上；于是出现的是「混合工作流」，而不是「无人车间」。",
+      "page": 4,
+      "page_note": "采纳动机与应用领域两节，人机协作见 p.9"
+    },
+    "evidence": {
+      "text": "证据分两层：21 家企业的结构化深访，加上 1,591 名从业者的问卷。企业侧给出具体数字（客服吞吐量、招聘周期、文档阅读人数），从业者侧给出态度分布（56%／47%／39%）。报告同时承认，企业侧数字全部自报，且多数企业没有量化框架。",
+      "page": 2,
+      "page_note": "样本说明，数据见 p.5–p.7"
+    },
+    "conclusion": {
+      "text": "报告给出四项政策方向：加强 AI 技能与终身学习，尤其针对中年和年长员工；支持劳动者转向更高价值的任务；建立衡量 AI 对生产率、工作质量和劳动条件影响的框架；帮中小企业通过共享平台和培训用得起 AI。",
+      "page": 9,
+      "page_note": "对劳动与就业政策的启示"
+    }
+  },
+  "limitations": [
+    "21 家企业不是随机抽样，报告自述「刻意优先保证行业差异」（p.2），因此企业层面的结论不能统计外推到全部中国企业。",
+    "所有生产率数字由企业代表自报，未经独立核验，原文写明「All figures are self-reported by firm representatives」（p.6）。",
+    "问卷由中国人民大学执行，1,591 人的样本构成报告未逐项披露，且为横断面调查，无因果识别。",
+    "报告未追踪同一批企业随时间的变化，因此只能说明「当下是什么样」，不能说明「变化有多快」。",
+    "属机构研究简报，未见同行评议说明。"
+  ],
+  "additions": [
+    "整理者补充：这份简报最有价值的不是那几个生产率数字（自报、无核验），而是「人机协作是主流、全自动不是」这一观察。它和同批几份美国报告的方向一致，但给了中国场景的具体证据。",
+    "整理者补充：报告里「十多人读规格文档降到 2 至 3 人」这类例子，属单个企业的内部案例，不能当作全行业比例使用。"
+  ],
+  "suspicious": [],
+  "self_check": {
+    "1_sentence_self_sufficient": "通过",
+    "2_point_has_page_and_quote": "通过，7 条齐全",
+    "3_every_number_has_scope": "通过，56%／47%／39% 标为从业者占比，95% 标为准确率门槛",
+    "4_type_matches_writing": "通过，实证研究，已写样本与时期",
+    "5_limitations_listed": "通过，5 条",
+    "6_three_voices_separated": "通过",
+    "7_no_unmarked_addition": "通过，两条补充均已标注",
+    "8_no_vague_sentence": "通过，三测试未命中"
+  }
+}

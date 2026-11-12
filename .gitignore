@@ -1,0 +1,13 @@
+# 产出与临时文件
+reports/
+inbox/
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+
+# 系统
+.DS_Store
+Thumbs.db
+desktop.ini

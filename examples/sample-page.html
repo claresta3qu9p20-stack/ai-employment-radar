@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Artificial Intelligence Adoption in Chinese Enterprises: Productivity Effects, Workforce Implications, and Policy Challenges</title>
+<style>
+/* AI 就业研报雷达 · 页面样式
+   一份 CSS 同时服务单份摘要页（page.html）与总目录页（catalog.html）。
+   想改配色只动 :root 里的变量；想改宽度动 .page 的 max-width。 */
+
+:root {
+  --ink: #1a1a1a;
+  --mid: #5c5c5c;
+  --dim: #8a8a8a;
+  --line: #e3e0d8;
+  --bg: #fdfcfa;
+  --accent: #0f6e56;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #efece6;
+  font-family: system-ui, -apple-system, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  color: var(--ink);
+}
+
+.page {
+  max-width: 560px;
+  margin: 0 auto;
+  background: var(--bg);
+  padding: 36px 26px 56px;
+  min-height: 100vh;
+}
+
+.kicker {
+  font-size: 12px;
+  letter-spacing: .14em;
+  color: var(--accent);
+  margin-bottom: 14px;
+}
+
+h1 {
+  font-size: 26px;
+  line-height: 1.4;
+  font-weight: 600;
+  margin: 0 0 8px;
+  letter-spacing: -.2px;
+}
+
+.sub {
+  font-size: 14px;
+  color: var(--mid);
+  line-height: 1.6;
+  margin-bottom: 22px;
+}
+
+.chip {
+  display: inline-block;
+  font-size: 12px;
+  padding: 3px 9px;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  border-radius: 2px;
+  margin-right: 6px;
+  vertical-align: 2px;
+}
+
+table.meta {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  margin: 0 0 26px;
+}
+
+table.meta td {
+  padding: 7px 0;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+  line-height: 1.6;
+}
+
+table.meta td.k {
+  color: var(--dim);
+  width: 72px;
+  white-space: nowrap;
+}
+
+h2 {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 34px 0 14px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+  letter-spacing: .02em;
+}
+
+h2:first-of-type { border-top: none; padding-top: 0; }
+
+.brief {
+  font-size: 14px;
+  line-height: 1.95;
+  color: #333;
+  margin: 0;
+}
+
+.point {
+  padding: 16px 0 16px 16px;
+  border-left: 2px solid var(--accent);
+  margin-bottom: 6px;
+}
+
+.point .n {
+  font-size: 11px;
+  color: var(--accent);
+  letter-spacing: .06em;
+  margin-bottom: 7px;
+}
+
+.point .t {
+  font-size: 15px;
+  line-height: 1.85;
+  font-weight: 500;
+}
+
+.point details { margin-top: 9px; }
+
+.point summary {
+  font-size: 11px;
+  color: var(--dim);
+  cursor: pointer;
+  display: inline-block;
+  border-bottom: 1px dotted var(--line);
+  padding-bottom: 1px;
+}
+
+.point .q {
+  font-size: 12px;
+  color: var(--dim);
+  line-height: 1.75;
+  word-break: break-word;
+  padding: 8px 0 0;
+}
+
+.notice {
+  font-size: 12px;
+  color: var(--dim);
+  line-height: 1.7;
+  border: 1px solid var(--line);
+  padding: 10px 12px;
+  margin-bottom: 18px;
+}
+
+.step { margin-bottom: 20px; }
+
+.step .h {
+  font-size: 12px;
+  color: var(--accent);
+  letter-spacing: .12em;
+  margin-bottom: 6px;
+}
+
+.step .t {
+  font-size: 14px;
+  line-height: 1.95;
+  color: #333;
+}
+
+.step .p {
+  font-size: 11px;
+  color: var(--dim);
+  margin-top: 5px;
+}
+
+ol.lim { margin: 0; padding-left: 18px; }
+
+ol.lim li {
+  font-size: 13px;
+  line-height: 1.85;
+  color: #333;
+  margin-bottom: 9px;
+}
+
+.add {
+  font-size: 13px;
+  line-height: 1.85;
+  color: #333;
+  background: #f6f3ec;
+  padding: 12px 14px;
+  margin-bottom: 9px;
+}
+
+details { margin-top: 16px; }
+
+summary {
+  font-size: 12px;
+  color: var(--dim);
+  cursor: pointer;
+}
+
+details .body {
+  font-size: 12px;
+  line-height: 1.8;
+  color: var(--mid);
+  padding: 10px 0 0;
+}
+
+footer {
+  margin-top: 34px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+  font-size: 11px;
+  color: var(--dim);
+  line-height: 1.8;
+}
+
+/* ---- 总目录页 ---- */
+
+.cat-group { margin-bottom: 8px; }
+
+.cat-month {
+  font-size: 12px;
+  letter-spacing: .12em;
+  color: var(--accent);
+  margin: 30px 0 4px;
+}
+
+.cat-item {
+  padding: 15px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.cat-item a {
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.65;
+  display: block;
+}
+
+.cat-item a:hover { color: var(--accent); }
+
+.cat-item .m {
+  font-size: 12px;
+  color: var(--dim);
+  margin-top: 7px;
+  line-height: 1.75;
+}
+
+.cat-item .m b { font-weight: 500; color: var(--mid); }
+
+.cat-empty {
+  font-size: 13px;
+  color: var(--mid);
+  line-height: 1.9;
+  border: 1px dashed var(--line);
+  padding: 18px;
+  margin-top: 20px;
+}
+
+@media print {
+  body { background: #fff; }
+  .page { max-width: none; }
+}
+
+</style>
+</head>
+<body>
+<div class="page">
+<div class="kicker">研报摘要</div>
+<h1>Artificial Intelligence Adoption in Chinese Enterprises: Productivity Effects, Workforce Implications, and Policy Challenges</h1>
+<div class="sub">中国企业的人工智能采纳：生产率效应、劳动力影响与政策挑战</div>
+
+<span class="chip">实证研究</span>
+
+<table class="meta">
+<tr><td class="k">作者</td><td>Ekkehard Ernst（ILO）、赵忠、朱惠琳、李宇慧、魏欣、张昊、陈泽阳（中国人民大学）</td></tr>
+<tr><td class="k">机构</td><td>国际劳工组织（ILO）</td></tr>
+<tr><td class="k">发布</td><td>2026-09　共 12 页</td></tr>
+<tr><td class="k">原文</td><td>https://www.ilo.org/publications/artificial-intelligence-adoption-chinese-enterprises-productivity-effects</td></tr>
+</table>
+
+<h2>信源简介</h2>
+<p class="brief">国际劳工组织是联合国负责劳动世界的专门机构，这份 12 页研究简报由该组织研究统计司与中国人民大学研究者合作完成，属机构研究序列而非同行评议论文。它的定位不是提出新理论，而是把中国企业的实际用法、实际收益和实际困难记下来，因此价值在于「一手材料」，而不是模型推演。样本覆盖制造、金融、建筑、教育、传媒、旅游等行业，从 8 人初创到 27 万人的集团都有。</p>
+
+<h2>核心观点</h2>
+<div class="point"><div class="n">01　p.1　·　首页要点</div><div class="t">受访的 21 家中国企业，没有一家是「还没开始」：要么已经在用 AI，要么有明确的近期上线计划。</div><details><summary>原文摘句</summary><div class="q">every company reported either active AI deployment or concrete plans for imminent adoption.</div></details></div><div class="point"><div class="n">02　p.5　·　生产率一节 · 数据表见 p.6</div><div class="t">凡是能拿出数字的地方，提升幅度都不小：某保险公司 300 名客服的日处理量从 6000 件涨到 15000 件，某集团招聘周期从 30 天压到 13 天，某制造灯塔工厂生产效率提高 30%。</div><details><summary>原文摘句</summary><div class="q">the insurance company reported that 300 customer-service employees increased their daily throughput from 6,000 to 15,000 issues, a 150 per cent improvement.</div></details></div><div class="point"><div class="n">03　p.6　·　表 3 注释</div><div class="t">但这些数字全是企业自己报的，绝大多数企业没有系统的评估办法，连「AI 到底带来多少效益」都说不清。</div><details><summary>原文摘句</summary><div class="q">All figures are self-reported by firm representatives.</div></details></div><div class="point"><div class="n">04　p.9　·　人机协作一节</div><div class="t">中国企业目前的主流形态是人机协作，不是全自动：AI 输出质量不达标时仍然要人来兜底，某人力资源服务公司的 AI 客服准确率低于 95%，达不到直接对客的标准。</div><details><summary>原文摘句</summary><div class="q">the HR services firm's AI customer service accuracy of below 95 per cent means that human review remains essential before any AI output reaches clients.</div></details></div><div class="point"><div class="n">05　p.5　·　生产率一节</div><div class="t">冲击集中在重复性、数据密集的任务上，某制造企业原本十多人读客户规格文档的岗位，现在只剩 2 到 3 人。</div><details><summary>原文摘句</summary><div class="q">a client's team of over 10 employees dedicated to reading customer specification documents was reduced to 2–3 employees</div></details></div><div class="point"><div class="n">06　p.7　·　从业者认知表</div><div class="t">从业者并不乐观也不悲观：56% 认为 AI 不可避免，47% 认为它创造的岗位多于替代的岗位，但 39% 预计自己的收入会下降。</div><details><summary>原文摘句</summary><div class="q">39 per cent of respondents anticipate that AI will lead to income declines</div></details></div><div class="point"><div class="n">07　p.4　·　组织模型一节</div><div class="t">企业引入 AI 的组织方式有三种：设专门团队集中做、嵌进业务部门做、以及员工自下而上自己用起来；多数企业还停在「用 AI 加速原有任务」这一层。</div><details><summary>原文摘句</summary><div class="q">In the specialised team model, a centralised AI team leads implementation and develops proprietary tools ... In the business-embedded model, AI capabilities are woven into existing business units ... In the spontaneous diffusion model, AI adoption spreads organically across teams without top-down coordination</div></details></div>
+
+<h2>推导过程</h2>
+<div class="notice">本段为整理后重排，非原文行文顺序；每步已标原文页码。</div>
+<div class="step"><div class="h">前提</div><div class="t">报告先立一条前提：要判断 AI 对就业的影响，得看企业实际怎么用它，而不是看技术本身能做到什么。所以选的办法是进企业访谈，而不是跑模型。</div><div class="p">引言与方法</div></div><div class="step"><div class="h">机制</div><div class="t">报告给出的链条是：企业为了效率、质量和成本引入 AI，先落在重复且数据密集的环节（筛简历、处理文档、回常规咨询）；这些环节被接管后，岗位内容被重组而不是整体消失，人转到判断、复核和异常处理上；于是出现的是「混合工作流」，而不是「无人车间」。</div><div class="p">采纳动机与应用领域两节，人机协作见 p.9</div></div><div class="step"><div class="h">证据</div><div class="t">证据分两层：21 家企业的结构化深访，加上 1,591 名从业者的问卷。企业侧给出具体数字（客服吞吐量、招聘周期、文档阅读人数），从业者侧给出态度分布（56%／47%／39%）。报告同时承认，企业侧数字全部自报，且多数企业没有量化框架。</div><div class="p">样本说明，数据见 p.5–p.7</div></div><div class="step"><div class="h">结论</div><div class="t">报告给出四项政策方向：加强 AI 技能与终身学习，尤其针对中年和年长员工；支持劳动者转向更高价值的任务；建立衡量 AI 对生产率、工作质量和劳动条件影响的框架；帮中小企业通过共享平台和培训用得起 AI。</div><div class="p">对劳动与就业政策的启示</div></div>
+
+<h2>局限</h2>
+<ol class="lim"><li>21 家企业不是随机抽样，报告自述「刻意优先保证行业差异」（p.2），因此企业层面的结论不能统计外推到全部中国企业。</li><li>所有生产率数字由企业代表自报，未经独立核验，原文写明「All figures are self-reported by firm representatives」（p.6）。</li><li>问卷由中国人民大学执行，1,591 人的样本构成报告未逐项披露，且为横断面调查，无因果识别。</li><li>报告未追踪同一批企业随时间的变化，因此只能说明「当下是什么样」，不能说明「变化有多快」。</li><li>属机构研究简报，未见同行评议说明。</li></ol>
+
+<div class="add">整理者补充：这份简报最有价值的不是那几个生产率数字（自报、无核验），而是「人机协作是主流、全自动不是」这一观察。它和同批几份美国报告的方向一致，但给了中国场景的具体证据。</div><div class="add">整理者补充：报告里「十多人读规格文档降到 2 至 3 人」这类例子，属单个企业的内部案例，不能当作全行业比例使用。</div>
+
+
+
+<footer>页码为 PDF 文件页序，与印刷页码不同处已在括注中标明。所有摘句均为原文，未作改写。</footer>
+</div>
+</body>
+</html>
